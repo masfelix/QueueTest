@@ -13,8 +13,8 @@ app.post('/send', (req, res)=>{
 
 app.listen(port, async ()=>{
 
-    const queueServerUrl = 'amqps://ybqbsmjz:swguNoZppAjNw6kB1xf5Wh6Hhz_dsOaP@prawn.rmq.cloudamqp.com/ybqbsmjz'; //amqps://localhost:5672
-    const queueName = 'sap-product'; //nome da fila
+    const queueServerUrl = ''; //amqps://localhost:5672
+    const queueName = ''; //nome da fila
 
     await rabbitMQ.init(queueServerUrl);
     try{
